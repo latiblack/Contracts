@@ -1,0 +1,22 @@
+{
+  "name": "xp-claim-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for XP token claiming",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:base": "hardhat run scripts/deploy.ts --network base",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.ts --network baseSepolia",
+    "deploy-drop:base": "hardhat run scripts/deploy-drop-claim.ts --network base",
+    "deploy-drop:base-sepolia": "hardhat run scripts/deploy-drop-claim.ts --network baseSepolia",
+    "verify": "hardhat verify"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
